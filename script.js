@@ -4,7 +4,7 @@ function speak(message) {
         utterance.lang = 'ru-RU'; // Указываем язык
         window.speechSynthesis.speak(utterance);
     } else {
-        alert('Web Speech API не поддерживается вашим браузером');
+        alert('Web Speech API не поддерживается вашим браузером, поэтому используйте Chrome - браузер.');
     }
 }
 
@@ -36,6 +36,6 @@ function checkBatteryStatus() {
             speak(batteryStatus + recommendation);
         });
     } else {
-        alert('Battery Status API не поддерживается вашим браузером');
+        alert('Battery Status API не поддерживается вашим браузером, поэтому используйте Chrome - браузер.');
     }
 }
